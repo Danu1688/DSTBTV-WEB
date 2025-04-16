@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberTV Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin(); loadPlaylist();">
+    <div class="sidebar">
+        <h2>CyberTV</h2>
+        <nav>
+            <a href="#" class="menu-item active">Dashboard</a>
+            <a href="#" class="menu-item">Order</a>
+            <a href="#" class="menu-item">Data Pelanggan</a>
+            <a href="#" class="menu-item">History Transaksi</a>
+            <a href="#" class="menu-item">Produk</a>
+            <a href="#" class="menu-item">Kategori</a>
+            <a href="#" class="menu-item">Users</a>
+            <a href="#" class="menu-item">Download Aplikasi</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <p>INFO | Admin TV melakukan pembelian pada tanggal 2023-04-12 20:57:01</p>
+        </div>
+
+        <div class="logo-slider">
+            <!-- Logo slider images -->
+            <img src="logo1.png" alt="CyberTV Logo" style="max-width: 100%; height: auto;">
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Transaksi Ku</h3>
+                <div class="value">1 Orderan</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Transaksi</h3>
+                <div class="value">1 Orderan</div>
+            </div>
+            <div class="stat-card">
+                <h3>Saldo Wallet</h3>
+                <div class="value">99.9M</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Pengguna</h3>
+                <div class="value">1 Pengguna</div>
+            </div>
+        </div>
+
+        <div id="playlist-info"></div>
+        <div id="playlist"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
